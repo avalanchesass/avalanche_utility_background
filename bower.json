@@ -1,0 +1,21 @@
+{
+  "name": "avalanche_utility_background",
+  "description": "Color scheme background with contrast text color",
+  "version": "3.0.0",
+  "authors": [
+    "Markus Oberlehner"
+  ],
+  "homepage": "https://github.com/avalanchesass/avalanche_utility_background",
+  "license": "GPL v2",
+  "dependencies": {
+    "avalanche_mixin_utility_background": "avalanchesass/avalanche_mixin_utility_background#dev-3.0.0"
+  },
+  "main": "scss/_background.scss",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

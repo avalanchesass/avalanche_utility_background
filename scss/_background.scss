@@ -1,0 +1,65 @@
+/* extract utility_background.css */
+/*---
+title:   Background
+section: Utility
+---
+
+Color scheme background with contrast text color.
+*/
+/**
+ * Variables
+ */
+$u-background-cs: (a) !default;
+$u-background-cs-alerts: () !default;
+$u-background-cs-grey: () !default;
+
+
+
+@each $-cs in $u-background-cs {
+  /*---
+  title:   cs: #{$-cs}
+  section: Background
+  ---
+```example:html
+<div class="u-background-cs-#{$-cs}">
+  cs: #{$-cs}
+</div>
+```
+  */
+  .u-background-cs-#{$-cs} {
+    @include u-background-cs($-cs);
+  }
+}
+
+@each $-cs-alert in $u-background-cs-alerts {
+  /*---
+  title:   cs-alert: #{$-cs-alert}
+  section: Background
+  ---
+```example:html
+<div class="u-background-cs-alert-#{$-cs-alert}">
+  cs-alert: #{$-cs-alert}
+</div>
+```
+  */
+  .u-background-cs-alert-#{$-cs-alert} {
+    @include u-background-cs-alert($-cs-alert);
+  }
+}
+
+@each $-cs-grey in $u-background-cs-grey {
+  /*---
+  title:   cs-grey: #{$-cs-grey}
+  section: Background
+  ---
+```example:html
+<div class="u-background-cs-grey-#{$-cs-grey}">
+  cs-grey: #{$-cs-grey}
+</div>
+```
+  */
+  .u-background-cs-grey-#{$-cs-grey} {
+    @include u-background-cs-grey($-cs-grey);
+  }
+}
+/* end extract utility_background.css */
