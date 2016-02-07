@@ -2,6 +2,7 @@
 Color scheme background with contrast text color  
 https://github.com/avalanchesass/avalanche_utility_background
 
+## About
 ### Author
 Markus Oberlehner  
 Twitter: https://twitter.com/MaOberlehner

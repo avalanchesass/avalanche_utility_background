@@ -1,3 +1,6 @@
+@import 'avalanche_utility_background/variable';
+@import 'avalanche_utility_background/mixin';
+
 /* extract utility_background.css */
 /*---
 title:   Background
@@ -7,15 +10,6 @@ section: Utility
 
 Color scheme background with contrast text color.
 */
-/**
- * Variables
- */
-$u-background-cs: (a) !default;
-$u-background-cs-alerts: () !default;
-$u-background-cs-grey: () !default;
-
-
-
 @each $-cs in $u-background-cs {
   /*---
   title:   cs: #{$-cs}
@@ -23,12 +17,12 @@ $u-background-cs-grey: () !default;
   section: utility_background
   ---
 ```example:html
-<div class="u-background-cs-#{$-cs}">
+<div class="#{$u-background-namespace}-cs-#{$-cs}">
   cs: #{$-cs}
 </div>
 ```
   */
-  .u-background-cs-#{$-cs} {
+  .#{$u-background-namespace}-cs-#{$-cs} {
     @include u-background-cs($-cs);
   }
 }
@@ -40,12 +34,12 @@ $u-background-cs-grey: () !default;
   section: utility_background
   ---
 ```example:html
-<div class="u-background-cs-alert-#{$-cs-alert}">
+<div class="#{$u-background-namespace}-cs-alert-#{$-cs-alert}">
   cs-alert: #{$-cs-alert}
 </div>
 ```
   */
-  .u-background-cs-alert-#{$-cs-alert} {
+  .#{$u-background-namespace}-cs-alert-#{$-cs-alert} {
     @include u-background-cs-alert($-cs-alert);
   }
 }
@@ -57,12 +51,12 @@ $u-background-cs-grey: () !default;
   section: utility_background
   ---
 ```example:html
-<div class="u-background-cs-grey-#{$-cs-grey}">
+<div class="#{$u-background-namespace}-cs-grey-#{$-cs-grey}">
   cs-grey: #{$-cs-grey}
 </div>
 ```
   */
-  .u-background-cs-grey-#{$-cs-grey} {
+  .#{$u-background-namespace}-cs-grey-#{$-cs-grey} {
     @include u-background-cs-grey($-cs-grey);
   }
 }
