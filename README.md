@@ -1,4 +1,4 @@
-# avalanche_utility_background
+# avalanchesass_utility_background
 Color scheme background with contrast text color  
 https://github.com/avalanchesass/avalanche_utility_background
 
