@@ -2,6 +2,7 @@
 @import 'avalanchesass_utility_background/variable';
 @import 'avalanchesass_utility_background/mixin';
 
+/* extract utility.css */
 /* extract utility_background.css */
 @each $-cs in $u-background-cs {
   /*---
@@ -54,3 +55,4 @@
   }
 }
 /* end extract utility_background.css */
+/* end extract utility.css */
