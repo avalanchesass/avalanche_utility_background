@@ -1,5 +1,19 @@
+@import 'avalanchesass_utility_background/style_guide';
+
 $u-background-namespace: '#{map-get($namespace, utility)}background' !default;
 
 $u-background-cs: (a) !default;
 $u-background-cs-alerts: () !default;
 $u-background-cs-grey: () !default;
+/*---
+section: utility_background_variable
+---
+
+```css
+$u-background-namespace: '#{$u-background-namespace}';
+
+$u-background-cs: (#{$u-background-cs});
+$u-background-cs-alerts: (#{$u-background-cs-alerts});
+$u-background-cs-grey: (#{$u-background-cs-grey});
+```
+*/
