@@ -4,6 +4,13 @@
 
 /* extract utility.css */
 /* extract utility_background.css */
+/*---
+title:   Example
+name:    utility_background_example
+section: utility_background
+sort:    1
+---
+*/
 @each $-cs in $u-background-cs {
   /*---
   title:   cs: #{$-cs}
