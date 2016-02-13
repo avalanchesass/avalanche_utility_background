@@ -17,19 +17,6 @@ u-background-cs-alert([$-cs-alert: positive[, $-mix-color: #fff[, $-mix-weight: 
 // Grey.
 u-background-cs-grey([$-cs-grey: a[, $-cs-grey-contrast: null]])
 ```
-```css
-.foo {
-  @include u-background-cs();
-}
-
-.bar {
-  @include u-background-cs-alert();
-}
-
-.baz {
-  @include u-background-cs-grey();
-}
-```
 */
 @mixin u-background-cs($-cs: a, $-cs-contrast: $-cs) {
   background: map-get($cs, $-cs);
