@@ -1,6 +1,19 @@
 # avalanchesass_utility_background
-Color scheme background with contrast text color  
-https://github.com/avalanchesass/avalanche_utility_background
+Color scheme background with contrast text color.
+
+## Install
+```
+npm install avalanchesass_utility_background --save
+```
+
+## Basic usage
+```css
+/* Import the main file. */
+@import 'avalanchesass_utility_background';
+
+/* Import just the mixin file. */
+@import 'avalanchesass_utility_background/mixin';
+```
 
 ## About
 ### Author
