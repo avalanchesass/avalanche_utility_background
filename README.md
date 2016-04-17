@@ -1,5 +1,5 @@
 # avalanchesass_utility_background
-Color scheme background with contrast text color.
+Color scheme background color.
 
 ## Install
 ```

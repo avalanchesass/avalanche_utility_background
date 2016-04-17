@@ -9,28 +9,23 @@ order:   2
 
 ```css
 // Basic.
-u-background-cs([$-cs: a[, $-cs-contrast: $-cs]])
+u-background-cs([$-cs: a])
 
 // Alerts.
-u-background-cs-alert([$-cs-alert: positive[, $-mix-color: #fff[, $-mix-weight: 20%]]])
+u-background-cs-alert([$-cs-alert: positive])
 
 // Grey.
-u-background-cs-grey([$-cs-grey: a[, $-cs-grey-contrast: null]])
+u-background-cs-grey([$-cs-grey: a])
 ```
 */
-@mixin u-background-cs($-cs: a, $-cs-contrast: $-cs) {
-  background: map-get($cs, $-cs);
-  color: map-get($cs-contrast, $-cs-contrast);
+@mixin u-background-cs($-cs: a) {
+  background: map-get($cs, $-cs) !important;
 }
 
-@mixin u-background-cs-alert($-cs-alert: positive, $-mix-color: #fff, $-mix-weight: 20%) {
-  background: mix(map-get($cs-alerts, $-cs-alert), $-mix-color, $-mix-weight);
-  color: map-get($cs-alerts, $-cs-alert);
+@mixin u-background-cs-alert($-cs-alert: positive) {
+  background: map-get($cs-alerts, $-cs-alert) !important;
 }
 
-@mixin u-background-cs-grey($-cs-grey: a, $-cs-grey-contrast: null) {
-  background: map-get($cs-grey, $-cs-grey);
-  @if $-cs-grey-contrast {
-    color: $-cs-grey-contrast;
-  }
+@mixin u-background-cs-grey($-cs-grey: a) {
+  background: map-get($cs-grey, $-cs-grey) !important;
 }
